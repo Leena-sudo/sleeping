@@ -7,13 +7,13 @@ export const course = [
         title: '宸宇老师：晨间唤醒',
         id:'101',
         type:'audio',
-        video: '1：28-第1天唤醒你的呼吸.mp3.mp3',
+        audio: '1：28-第1天唤醒你的呼吸.mp3.mp3',
       },
       {
         title:'正念呼吸-练习-10分钟',
         id:'102',
         type:'audio',
-        video: '26_正念呼吸-练习-10分钟.m4a',
+        audio: '26_正念呼吸-练习-10分钟.m4a',
       },
       {
         title:'32_正念行走-练习-7分钟',
