@@ -18,7 +18,7 @@
     <div class="player-message">
       <p>{{ courseDetail?.title }}</p>
     </div>
-    <div class="player-description">
+    <div class="player-description" v-if="courseDetail?.description">
       <img src="@/assets/ma4ym4mgg3wljb.png" alt="">
     </div>
   </div>
