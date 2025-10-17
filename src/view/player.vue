@@ -43,7 +43,9 @@ const courseDetail = computed(()=>{
   return detail
 })
 
-const resolveVideo = computed(() =>  new URL(`../assets/video/${courseDetail.value.video ||  courseDetail.value.audio || ''}`, import.meta.url).href)
+// const resolveVideo = computed(() =>  new URL(`../assets/video/${courseDetail.value.video ||  courseDetail.value.audio || ''}`, import.meta.url).href)
+
+const resolveVideo = computed(() =>  new URL(`${courseDetail.value.video ||  courseDetail.value.audio || ''}`, import.meta.url).href)
 
 </script>
 
