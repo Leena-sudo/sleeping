@@ -10,7 +10,7 @@
       </template>
       <template v-else>
         <video controls>
-          <source :src ='resolveVideo' type="video/mp4">
+          <source :src ='`basicUrl/${courseDetail.video}`' type="video/mp4">
           Your browser does not support the video element.
         </video>
       </template>
@@ -29,6 +29,7 @@ import { ref, computed} from 'vue'
 import {useRoute} from 'vue-router'
 import {course} from './constant'
 
+const basicUrl = 'https://na.genefun.net/media/'
 const route = useRoute();
 const {pid, id}= route.query
 

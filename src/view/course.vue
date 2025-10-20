@@ -29,7 +29,7 @@ function handleLink(item) {
 <style lang="scss" scoped>
 .course {
   display: flex;
-  
+  flex-wrap: wrap;
   .course-item {
     margin-right: 20px;
     flex:0 0 calc(50% - 20px);
