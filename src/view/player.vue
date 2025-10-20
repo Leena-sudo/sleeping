@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-import { ref, computed} from 'vue'
+import { ref, computed, onMounted} from 'vue'
 import {useRoute} from 'vue-router'
 import {course} from './constant'
 
@@ -44,6 +44,9 @@ const courseDetail = computed(()=>{
   return detail
 })
 
+onMounted(() => {
+  document.title = courseDetail.value.title || 'sleeping'
+})
 // const resolveVideo = computed(() =>  new URL(`../assets/video/${courseDetail.value.video ||  courseDetail.value.audio || ''}`, import.meta.url).href)
 
 const resolveVideo = computed(() =>  new URL(`${courseDetail.value.video ||  courseDetail.value.audio || ''}`, import.meta.url).href)
