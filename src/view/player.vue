@@ -10,7 +10,7 @@
       </template>
       <template v-else>
         <video controls>
-          <source :src ='`basicUrl/${courseDetail.video}`' type="video/mp4">
+          <source :src ='courseDetail.video' type="video/mp4">
           Your browser does not support the video element.
         </video>
       </template>
